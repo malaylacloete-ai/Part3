@@ -2,3 +2,26 @@
 
 <!--Sitemap for website indexing-->
 <urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
+       <url>
+           <loc>https://makaylacloete.netlify.app/index.html</loc>
+       </url>
+
+        <url>
+           <loc>https://makaylacloete.netlify.app/about.html</loc>
+       </url>
+
+       <url>
+           <loc>https://makaylacloete.netlify.app/services.html</loc>
+       </url>
+
+       <url>
+           <loc>https://makaylacloete.netlify.app/enquiry.html</loc>
+       </url>
+
+       <url>
+           <loc>https://makaylacloete.netlify.app/contact.html</loc>
+       </url>
+
+</urlset>
+
+
