@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+
+    <!--SEO: Page title-->
+    <title>About us | MTC Holdings</title>
+
+    <!--SEO: Meta description-->
+    <meta name="description"
+          content="Learn about MTC Holdings, our history, our mission and vision and the hard working members behind the scenes">
+    
+    <!--SEO: Meta keywords-->
+    <meta name="keywords"
+          content="about MTC Holdings, our history, our mission and vision and key members">
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
 
-    <!--Header:Our Story-->
+    <!--Main Heading-->
     <section class="content">
     <header>
         <h1>Our Story</h1>
@@ -26,36 +37,52 @@
         <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
-       
+
+    <!--SEO keyword-rich content-->
     <section class="container">
-        <!--History Section-->
-        <h2>Our History</h2>
+    <h2>About us</h2>
+    <p>MTC Holdings is committed to providing affordable groceries, clothing and home essentials while delivering excellent customer service and a convenient online shopping experience.</p>
+
+    <!--SEO-optimized image-->
+    <!--Lazy loading improves page speed-->
+    <img src="Images/About us Images/workers.jpg"
+        alt="Customer services team assiting online shopping customers"
+        loading="lazy">
+    </section>
+
+    <!--History Section-->
+    <section class="accordion">Our History</section>
+    <section class="panel">
         <p>Since 1979, MTC Holdings has grown from tiny shop in the Western Cape into a home for all South Africans. We have stayed true to our roots by focusing on what matters, real people.
-</p>
+        </p>
     </section>
 
     <!--Mission & Vision Section-->
-    <section class="container">
-        <h2>Mission & Vision</h2>
+    <section class="accordion">Our Mission and Vision</section>
+    <section class="panel"> 
         <p>To be the heart of South African retail a place where every person feels seen and every product brings genuine value.We are here to make life little easier. By keeping essentials affordable and quality high, we aim to lift up families and communities we serve through honest thoughtful work. 
 </p>
     </section>
 
-    <section class="container">
-         <!--Team Section:List of key members-->
-        <h2>Meet The Team</h2>
+    <!--Team Section:List of key members-->
+    <!--Lazy loading improves page speed-->
+    <section class="accordion">Meet The Team</section>
+    <section class="panel"> 
         <section class="content">
-        <img src="leadership.jpeg" alt="About us">
+        <img src="Images/leadership.jpeg" alt="About us" loading="lazy">
         <ul>
             <li><strong>John Furner-President and Ceo</strong></li>
             <li><strong>Donna Morris-Executive Vice President and Chief People Officer</strong></li>
             <li><strong>Latriece Watkins-President and CEO, Sam's Club</strong></li>
         </ul>
     </section>
-    </section>
+    </section> 
 
     <footer>
         <p>&copy;2026 MTC Holdings.All rights reserved.</p>
     </footer>
+
+     <script src="js/script.js"></script>
+     
 </body>
 </html>

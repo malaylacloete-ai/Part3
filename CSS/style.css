@@ -206,6 +206,84 @@ nav ul li a{
     margin-bottom:20px;
 }
 
+form{
+    background-color: #ffffff;
+    padding:20px 40px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align:center;
+}
+
+/* Input fields */
+input, textarea{
+    width:100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+label{
+    margin-bottom:5px;
+    font-weight:bold;
+    color: #333;
+    display:block;
+}
+
+input[type="text"], input[type="email"], input[type="number"]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+     background-color:#003b70;
+     color:white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 10px 20px;
+     font-size: 16px;
+     transition: background-color 0.3s ease, transform 0.2 ease;
+     width: 30%;
+     box-sizing: border-box;
+}
+
+input[type="submit"]:hover{
+    background-color:#003b70;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active{
+    background-color:#0071ce;
+    transform: translateY(0);
+}
+
+.error{
+    color:red;
+    font-weight:bold;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Response Box */
+#responseBox{
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f4ff;
+    border-left: 5px solid #0071dc;
+    display: none;
+}
+
+
 /* Contact section */
 .contact{
     grid-area: contact;
@@ -295,12 +373,147 @@ p{
     font-weight:400;
 }
 
+/* Accordion */
+.accordion{
+    background-color:#0071ce;
+    color: white;
+    padding: 18px;
+    font-size: 22px;
+    font-weight:bold;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+    margin:20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.accordion:hover{
+    background-color: #004c91;
+    transform: scale(1.02);
+}
+
+.panel{
+    display:none;
+    background-color: aliceblue;
+    padding:20px;
+    border-left: 5px solid #ffc220;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modale */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.modal-content{
+    background:white;
+    width:300px;
+    margin:15% auto;
+    padding:20px;
+}
+
+/* Gallery style */
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:15px;
+    justify-content: center;
+    max-width: 900px; /* Oncreased container size */
+    margin: 20px auto;
+}
+
+.gallery img{
+    width: 100%;
+    height: 200px; /*Increase the image height */
+    object-fit: absolute;
+    cursor:pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+}
+
+/* Lightbox Styles */
+
+#lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#lightbox img{
+    display:block;
+    max-width: 80%;
+    margin:50px auto;
+}
+
+#search{
+    width: 60%;
+    max-width: 600px;
+    display:block;
+    margin: 20px auto;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: 2px solid #0071ce;
+    border-radius: 30px;
+    outline:none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition:  all 0.3s ease;
+}
+
+#search:focus{
+    border-color: #004c91;
+    box-shadow: 0 0 12px rgba(0,113,206,0.4);
+}
+
+.search-title{
+    text-align:center;
+    color:#0071ce;
+    font-size:28px;
+    margin-top: 20px;
+}
+
+#suggestions{
+    border: 1px solid #ccc;
+    background: white;
+    width: 300px;
+    display: none;
+}
+
+#suggestions div{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions div:hover{
+    background: #f2f2f2;
+}
+
 /* Footer */
 footer{
     background-color: #00274d;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:30px;
+    margin-top:20px;
+}
+
+/* Header and Footer Dimmed Style */
+.dimmed{
+    opacity:0.3;
+    pointer-events: none; /* Disable interactions */
+    transition: opacity 0.3s;
 }
 

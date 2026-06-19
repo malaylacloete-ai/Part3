@@ -1,0 +1,7 @@
+## Changelog
+- Created an 'Images' folder to organize image files.
+- Moved image assets into the 'Images' folder.
+- Updated image files paths in the code to match the new folder structure.
+
+## Part 3
+

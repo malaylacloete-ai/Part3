@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+
+    <!--SEO: Page title-->
+    <title>Our Services | MTC Holdings</title>
+
+    <!--SEO: Meat description-->
+    <meta name="description"
+          content="Explore our online shopping services including product delivery, curbside pickup and secure payments">
+
+    <!--SEO: Meta keywords-->
+    <meta name="keywords"
+          content="online shopping services,product delivery, return and exchange, curbside pickup, pharmacy & health and money center ">
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
 </head>
@@ -26,41 +37,73 @@
         <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
+
+        <!--Search-->
+        <h2 class="search-title">Find Services</h2>
+        <input type="text" id="search" placeholder="Search services">
+        <section id="suggestions"></section>
+
+        <!--Services Information-->
+        <section class="container">
+        <h2>Online Shopping</h2>
+        <p>
+            Browse a wide range of groceries, clothing and home essentials.
+        </p>
+        </section>
+
+        <section class="container">
+        <h2>Product Delivery</h2>
+        <p>
+            We provide reliable and convenient delivery services to ensure customer satisfaction.
+        </p>
+
+        <!--SEO-optimized image-->
+        <!--Lazy loading improves page speed-->
+        <img src="Images/Service Images/dropping of packages.jpg"
+             alt="Delivering and dropping off customer packages"
+             loading="lazy">
+        </section>
+        
+        
     
         <section class="container">
+
+            <!--Lazy loading improves page speed-->
 
             <!--Service1:Returns-->
             <section class="card">
                 <h3>Returns & Exchanges</h3>
-                <img src="return.webp" alt="Return and Exchange">
+                <img src="Images/return.webp" alt="Return and Exchange" laoding="lazy">
                 <p>Simple and fast returns at our Guest Service counter or via email.</p>
             </section>
 
             <!--Service 2:Pickup-->
             <section class="card">
                 <h3>Curbside Pickup</h3>
-                <img src="sidepickup.jpeg" alt="Curbside Pickup"
+                <img src="Images/sidepickup.jpeg" alt="Curbside Pickup" loading="lazy">
                 <p>Shop online and we'll bring your order right to your car for free</p>
             </section>
 
             <!--Service3:Pharmacy-->
             <section class="card">
                 <h3>Pharmacy & Health</h3>
-                <img src="health.jpeg" alt="Pharmacy and Health"
+                <img src="Images/health.jpeg" alt="Pharmacy and Health" laoding="lazy">
                 <p>Manage prescriptions, get vaccinations and access health screenings</p>
             </section>
 
             <!--Service 4:Finance-->
             <section class="card">
                 <h3>Money Center</h3>
-                <img src="money.jpeg" alt="Money center"
+                <img src="Images/money.jpeg" alt="Money center" loading="lazy">
                 <p>Convenient bill pay, money transfers and check cashing services.</p>
             </section>
         </section>
-    
             
     <footer>
-        <p>&copy;2026 MTC Holdings.All rughts reserved.</p>
+        <p>&copy;2026 MTC Holdings.All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Home Page</title>
+
+    <!--SEO: Page title displayed in search results-->
+    <title>MTC Holdings | Affortable online shopping for Groceries, Clothing and Home essentials</title>
+
+    <!--SEO: Meta description used by search engines-->
+    <meta name="description"
+          content="Shop affortable groceries, clothing and home essentials. This is the best place to find quality products, exclusive deals and convenient online shopping.">
+
+    <!--SEO: Relevent keywords for search engines-->
+    <meta name="keywords"
+          content="online shopping, groceries, clothing, home essentials and affortable products">
+
+    <!--Author information-->
+    <meta name="author" content="Makayla C">
+
     <link  rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
-    <!--Header:Site titel appearing on every page-->
+    <!--Main page heading-->
     <section class="content">
     <header>
-        <h1>MTC Holdings</h1>
+        <h1>Welcome to MTC Holdings</h1>
     </header>
     </section>
     <!--Navigation:The menu required for the common page structure-->
@@ -28,8 +42,31 @@
     <!--Hero Section:Includes hero images call to action-->
     <main>
     <section class="hero">
-        <img src="happy.family.jpg" alt="Hero Image" style="max-width: 100%; height:auto;">
-        <h1>Welcome to MTC Holdings</h1>
+        <img src="Images/happy.family.jpg" alt="Hero Image" style="max-width: 100%; height:auto;" >
+
+    <!--SEO keyword-rich content-->
+    <section>
+        <h2>Affortable Online Shopping</h2>
+
+        <p>Shop anything that your heart desires anything from home essentials to clothingand groceries with affortable prices
+           Our online shopping platform provides quality products and excellent customer services.
+        </p>
+    </section>
+
+    <!--Gallery Section-->
+    <!--SEO optimized image-->
+    <!--Lazy loading improves page speed-->
+    <h2>Products and Services</h2>
+    <section class="gallery">
+        <img src="Images/Home Page Images/happy family shopping.jpeg" onclick="showImage(this.src)" loading="lazy">
+        <img src="Images/Service Images/medication service.jpg" onclick="showImage(this.src)" loading="lazy">
+        <img src="Images/Service Images/service delivery.jpg" onclick="showImage(this.src)" loading="lazy">
+    </section>
+
+    <div id="lighbox" onclick="closeLightbox()">
+        <img id="lighbox-img">
+    </div>
+
         <p>Shop better, Live better and Save money.</p>
         <!--Call to action-->
         <button href="enquiry.html" class="cta-button">Shop Now</a>
@@ -39,5 +76,8 @@
     <footer>
        <p>&copy;2026 MTC Holdings.All rights reserved.</p>
     </footer>
+
+     <script src="js/script.js"></script>
+     
 </body>
 </html>

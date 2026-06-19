@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry</title>
+
+    <!--SEO: Page title-->
+    <title>Enquiry Form | MTC Holdings</title>
+
+    <!--SEO: Meta description-->
+    <meta name="description"
+          content="Submit your enquiries online and get quick assistance with products, services, orders and customer support.">
+
+    <!--SEO: Meta keywords-->
+    <meta name="keywords"
+        content="enquiry,contact us, enquiries: product or services, customer assistance, feedback, online equiry form">
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
 </head>
@@ -26,19 +37,47 @@
         </ul>
     </nav>
     
-    <!--enquiry.html-->
+    <!--Enquiry Form-->
     <section class="container">
-    <h2>Submit Your Enquiry</h2>
-    <p>Please fill out the form below to get in touch with us.</p>
-    <!--This is the code for the Google form-->
-    <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLSd-mjKuSeLe5TF8MBL_H6Q3AAYuQ9ndgNNJCWzr9N47o66J4g/viewform?embedded=true" 
-    width="640" height="1066" frameborder="0" marginheight="0" marginwidth="0">Loading…
-    </iframe>
+        <form id="enquiryForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <p class="error" id="nameError"></p>
+             
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+            <p class="error" id="emailError"></p>
+
+            <!--Product / Services-->
+            <label for="type">Enquiry Type</label>
+            <select id="type">
+                <opition value=""></opition> <!--Select-->
+                <opition value="Clothing">Clothing</opition>
+                <opition value="Home essentials">Home essentials</opition>
+                <opition value="Delivery Service">Delivery Service</opition>
+                <opition value="repair">Repair Services</opition>
+            </select>
+            <p class="error" id="typeError"></p>
+
+            <!--Message-->
+        <label for="message">Message</label>
+        <textarea id="message" rows="4"></textarea>
+        <p class="error" id="messageError"></p>
+
+         <input type="submit" value="Submit Enquiry">
+
+        </form>
+
+        <!--Response-->
+        <section id="responseBox"></section>
+
     </section>
     
     <footer>
         <p>&copy;2026 MTC Holdings.All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

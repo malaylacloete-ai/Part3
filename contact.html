@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+
+    <!--SEO: Page title-->
+    <title>Contact us | MTC Holdings</title>
+
+    <!--SEO: Meta description-->
+    <meta name="description"
+          content="Contact MTC Holings for customer support, product enquiries, feedback and assistance with your online shopping experience.">
+
+    <!--SEO: Meta keywords-->
+    <meta name="keywords"
+          content="contact MTC Holings, customer support, product inquiries, customer feedback, shopping assitance, contact information">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
     <section class="content">
@@ -24,30 +35,47 @@
         <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
+
     <!--Main Container for contact page content-->
     <main>
+
         <!--Section:Direct contact numbers-->
         <!--Using a section tag to group related contact info together-->
         <section class="container">
-            <h2>Contact Numbers</h2>
+            <h2>Contact Information</h2>
+            <p>
+               Our customer support team is available to assist with product inquiries, orders and general questions.
+            </p>
             <ul>
                 <!--Strong tags make the label bold for better readability-->
                 <li><strong>Customer Support:</strong>1-800-925-6278</li>
                 <li><strong>Corporate HQ:</strong> 1-800-925-6278</li>
             </ul>
+
+        <!--SEO-optimised image-->
+        <!--Lazy loading improves page speed-->
+        <img src="Images/Contact us Images/customer_service_management-1024x683.jpg"
+             alt="Customer support representative assiting customers with inquiries"
+             loading="lazy">
         </section>
 
         <!--Section:Physical office location-->
         <section class="container">
-            <h2>Our Main Office</h2>
-            <!--The address tag is great for SEO and accessibility-->
+
+        <!--Map-->
+        <h2>Locations</h2>
+        <section id="map" style="height: 400px; width:100%; border-radius:8px; margin-top:20px;"></section>
+
+        <h2>Our Main Office</h2>
+        <!--The address tag is great for SEO and accessibility-->
             <address>
                 702 SW 8th St,<br>
                 Bentonville,AR 72716,<br>
                 USA
             </address>
-         
-            <!--Locaton 1:Global headquarters (USA)-->
+
+        <!--Locaton 1:Global headquarters (USA)-->
+        <!--Lazy Loading improves page speed-->
         <section class="card">
             <h3>Global Headquaters(USA)</h3>
             <iframe
@@ -80,11 +108,21 @@
         <!--Section:email support-->
         <section class="container">
             <h2>Email Enquiries</h2>
-            <ul>
+
+        <!--Modal-->
+        <button onclick="openModal()">Contact Us</button>
+        <section class="modal" id="myModal">
+        <section class="modal-content">
+             <ul>
                 <!--mailto: makes these links clickable so they open an email app-->
                 <li>Gift Cards:<a href="mailto:help@walmart.com">help@walmart.com</a></li>
                 <li>South africa Office:<a href="mailto:info@walmart.co.za">info@walmart.co.za</a></li>
             </ul>
+
+        <p id="errorMsg" class="error"></p>
+        <button onclick="closeModal()">Close</button>
+        </section>
+        </section>
         </section>
 
         <!--Section:Trading Hours-->
@@ -100,11 +138,40 @@
                 <li>SA Stores(Sat):8am-8pm/(Sun)9am-5pm</li>
             </ul>
         </section>
+
+    <section class="container">
+        <h2>Get in touch with Us</h2>
+
+        <p>Please fill out the form below to get in touch with us.</p>
+        
+
+        <!--Contact Form (Security)-->
+        <!--Security: form validation prevents empty or invalid submissions-->
+        <form id="sampleform" onsubmit="return validationForm()">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+             
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="1" max="100" required>
+
+            <input type="submit" value="Submit">
+            
+        </form>
+        <p id="errorMsg" class="error"></p>
+
+        </section>
     </main>
+
 
     <footer>
         <p>&copy;2026 MTC Holdings.All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         
 </body>
 </html>
