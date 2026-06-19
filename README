@@ -3,5 +3,117 @@
 - Moved image assets into the 'Images' folder.
 - Updated image files paths in the code to match the new folder structure.
 
-## Part 3
+### Part 3
 
+## Project Overview
+The MTC Holdings website is a responsive e-commerce website developed using HTML, CSS and JavaScript. THe purpose of this website is to provide users with an online shopping experience where then can browse products, learn about the company, view services offered and submit enquiries through a contact form.
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- AJAX(for enquiry form functionality)
+
+### Website Pages
+
+## Home Page 
+The home page serves as the main landing page of the website.
+
+# Features
+- responsive navigation menu
+- hero section
+- featured products section
+- product search functionality
+- product cards
+- SEO- optimised content
+- internal navigation links
+
+## About us
+The about us page provides information about the company
+
+# Features
+- company overview
+- missin and vision statement
+- customer-focused content
+- SEO-optimised headings and content
+
+## Services
+The services page outlines the services offered by the business.
+
+# Features
+- online shopping services
+- product delivery information
+- cutomer support information
+- secure payment information 
+- SEO-optimised services description
+
+## Contact Us
+The contact us page allows users to contact the business.
+
+# Features
+- contact information
+- enquiry form
+- form validation
+- AJAX form submission
+- success and error notifications
+- responsive design
+
+## SEO
+## On-page SEO
+The website was optimised using several on-page SEO techniques
+
+# Keyword Research
+Relevant keywords related to online shopping, groceries, clothing, home essentials, customer support and retail services were identified and integrated into website content.
+
+# Title tags
+each webpage contains a unique title tag.
+
+# Meta Description
+each page contains a detailed meta description that accurately describes its content
+
+# Meta keywords
+relevant keywords were included to support search engine indexing.
+
+# Image optimisation
+Images use descriptive file names and meaningful alt text.
+
+# Mobile Friendliness
+Responsive CSS were implemented to ensure compatibility across desktop, tablets and mobile devices.
+
+## Off-Page SE0
+
+# Backlinks
+The website can improve authority through backlinks from reliable websites, blogs and online directories.
+
+# Social Media Promotion
+The website can be promoted through:
+- facebook
+- instagram
+- tiktok
+- twitter
+
+# Local SEO
+Local SEO strategies include:
+- displaying contact information
+- Interactive map integration
+- location based content
+- business directory listings
+
+# Additional SEo features
+- Robots.txt
+- Sitemap.xml
+- Page speed Optimisation: lazy image loading; efficient css styling and responsive layouts
+- Security: required form fields; email validation; input information and AJAX form Handling
+
+## JavaScript Features
+This includes interactive JavaScript functionality:
+- servives search 
+- AJAX enquiry form and contact us form
+- Success and Error messages
+
+### Accessibilty features
+- Descriptive image alt text
+- Clear navigation structure
+- Semantic HTML elements
+- Readable typography
+- Mobile-friendly layouts
